@@ -1,0 +1,234 @@
+{
+	"authors": [
+		{
+			"id": 1550377221,
+			"name": "Bigrand",
+			"desc": "Worked on Free Web Novel, Light Novel Plus, NOVA, Novel Nice (Novlove), NovelFull, NovelFull (NET), NovelHall, Novgo (NET), Read From Net, Read Novel Full, Syosetsu, novelvault, unhtml",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -2017179821,
+			"name": "Doomsdayrs",
+			"desc": "Worked on Asian Hobbyist, Light Novel Bastion, Light Novel Heaven, NeoSekai Translations, Novel Nice (Novlove), NovelFull, ScribbleHub, Sky-mtl(novel-rare), Syosetsu, WuxiaWorld.Site, Zetro Translations",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -821183208,
+			"name": "TechnoJo4",
+			"desc": "Worked on 247truyen, CommonCSS, Creative Novels, Foxaholic, Madara, NovelFull, Pawchive, RoyalRoad, ScribbleHub, WWVolare, url",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -1432576487,
+			"name": "Rider21",
+			"desc": "Worked on Jaomix, Novel.TL, Ranobehub, Ranobelib, Renovels, Rulate, Ruvers, Автор Тудей, РанобэРФ, Целлюлоза",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -980691669,
+			"name": "Confident-hate",
+			"desc": "Worked on Honeyfeed, KnoxT, NovelBuddy, NovelHall, PawRead, Read From Net, Wattpad",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -931466336,
+			"name": "JFronny",
+			"desc": "Worked on AltHistory, Questionable Questing, SpaceBattles, Sufficient Velocity, Wildbow (Parahumans), XenForo",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -1833162487,
+			"name": "MechTechnology",
+			"desc": "Worked on ArNovel, Rain of Snow Translations, Readhive, Sleepy Translations, Travis Translations",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -1612337247,
+			"name": "Zordic",
+			"desc": "Worked on NovelArrow, WTR-LAB, Webnovel",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": 1925337790,
+			"name": "AbhiTheModder",
+			"desc": "Worked on Sky-mtl(novel-rare), WuxiaWorld.Site",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -1217496288,
+			"name": "enhance7191",
+			"desc": "Worked on Inkitt, Shanghai Fantasy",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -778352505,
+			"name": "wsu808",
+			"desc": "Worked on FilterOptions, Fimfiction",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": 1440041231,
+			"name": "Ali Mohamed",
+			"desc": "Worked on Rewayat Club - نادي الروايات",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": 1426213634,
+			"name": "Claudemirovsky",
+			"desc": "Worked on Central Novel",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": 1379167306,
+			"name": "David Kolf",
+			"desc": "Worked on dkjson",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": 1816860847,
+			"name": "Khonkhortisan",
+			"desc": "Worked on NOVA",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": 2112104435,
+			"name": "Spacejet",
+			"desc": "Worked on NovelBuddy",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -228911304,
+			"name": "Stepets",
+			"desc": "Worked on utf8",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -219609755,
+			"name": "StormX4",
+			"desc": "Worked on ScribbleHub",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -621820381,
+			"name": "Xanvial",
+			"desc": "Worked on Novel Nb",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -897872098,
+			"name": "felipebonfim2006",
+			"desc": "Worked on BL Novels",
+			"imageURL": "",
+			"website": ""
+		},
+		{
+			"id": -306470064,
+			"name": "unTanya",
+			"desc": "Worked on Xiaowaz",
+			"imageURL": "",
+			"website": ""
+		}
+	],
+	"libraries": [
+		{
+			"name": "247truyen",
+			"ver": "1.1.2",
+			"url": null,
+			"hash": "5497988eb28d103e8f992981e3c6ee369d6d1a8171d3719c0361d8130fd9b860"
+		},
+		{
+			"name": "CommonCSS",
+			"ver": "1.0.1",
+			"url": null,
+			"hash": "eb398cff152cf1ff1a7ca7ad415f55bf55aca0acefafb5363982e083de18a67d"
+		},
+		{
+			"name": "FilterOptions",
+			"ver": "1.0.1",
+			"url": null,
+			"hash": "f4a68eae0229819ab1e5ca73673f6f0cf81290ff024094fc0cb3f5625d6a6ebe"
+		},
+		{
+			"name": "Madara",
+			"ver": "2.9.2",
+			"url": null,
+			"hash": "4c48a1e6530d3198d43d5a537a57965fcf9f8796e51837e7cf1d76f6ad87c879"
+		},
+		{
+			"name": "WWVolare",
+			"ver": "1.2.2",
+			"url": null,
+			"hash": "ae65d57adca4d64e2e1b713db84524e70b47b941d7cc58701aa8c665303bc024"
+		},
+		{
+			"name": "XenForo",
+			"ver": "1.0.18",
+			"url": null,
+			"hash": "23d94d9097c5f047e5544115f8016e911537b7ec7284aaee3c59cad87d2db3ec"
+		},
+		{
+			"name": "dkjson",
+			"ver": "1.0.1",
+			"url": null,
+			"hash": "97803cfe54b21695dda1e8f8a37c5933c4dc7691e5df17c2c1df6cef1203c259"
+		},
+		{
+			"name": "novelvault",
+			"ver": "1.0.11",
+			"url": null,
+			"hash": "90caa41d94cff433ec99e895dd9eb512b2d556d2d398bbefe9c53eb0732cb7e5"
+		},
+		{
+			"name": "unhtml",
+			"ver": "1.0.1",
+			"url": null,
+			"hash": "3ecb2c80afb4903be3f6827284f3fc8914f43fe31894f94fb35d47f40c03b73f"
+		},
+		{
+			"name": "url",
+			"ver": "1.0.0",
+			"url": null,
+			"hash": "f34c81389a1f13b2f6c9caac7b3c098708cab8b4de27f8081812a65ead7bc51a"
+		},
+		{
+			"name": "utf8",
+			"ver": "1.0.0",
+			"url": null,
+			"hash": "385ac1f729ae11ec9ea60089d275e6d937857a0ee2a09291c5ce187e86966180"
+		}
+	],
+	"scripts": [
+		{
+			"id": 93278,
+			"name": "Pawchive",
+			"fileName": "Kemono",
+			"imageURL": "https://pawchive.pw/static/logo.png",
+			"lang": "all",
+			"ver": "1.1.1",
+			"libVer": "1.0.0",
+			"md5": "8820fbcf77b6069ee7c1b572918f8714d796f382f0f8ce13fb46675e93c5b050",
+			"type": "LuaScript"
+		}
+	],
+	"styles": [],
+	"js": []
+}
