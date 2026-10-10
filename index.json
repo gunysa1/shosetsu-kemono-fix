@@ -223,9 +223,9 @@
 			"fileName": "Kemono",
 			"imageURL": "https://pawchive.pw/static/logo.png",
 			"lang": "all",
-			"ver": "1.1.1",
+			"ver": "1.1.2",
 			"libVer": "1.0.0",
-			"md5": "8820fbcf77b6069ee7c1b572918f8714d796f382f0f8ce13fb46675e93c5b050",
+			"md5": "27c077d21ddc4d54cf92364158397d641c93c64e0ade4adae8bb6e9c611fb9f2",
 			"type": "LuaScript"
 		}
 	],

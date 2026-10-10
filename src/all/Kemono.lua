@@ -1,4 +1,4 @@
--- {"id":93278,"ver":"1.1.1","libVer":"1.0.0","author":"TechnoJo4","dep":["url>=1.0.0","dkjson>=1.0.0"]}
+-- {"id":93278,"ver":"1.1.2","libVer":"1.0.0","author":"TechnoJo4","dep":["url>=1.0.0","dkjson>=1.0.0"]}
 
 local baseURL = "https://pawchive.pw/"
 local apiURL = baseURL .. "/api/v1"
@@ -85,12 +85,9 @@ return {
     end,
 
     parseNovel = function(novelURL, loadChapters)
-        local creator
-        for _,v in pairs(creators()) do
-            if novelURL == creatorURL(v) then
-                creator = v
-            end
-        end
+        -- fetch just this creator's profile; the full /creators list is ~15 MB
+        -- and too slow to download and parse on a phone
+        local creator = jsonGET(apiURL .. novelURL .. "/profile")
 
         local info = NovelInfo {
             title = creator.name,
