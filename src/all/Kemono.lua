@@ -1,4 +1,4 @@
--- {"id":93278,"ver":"1.1.2","libVer":"1.0.0","author":"TechnoJo4","dep":["url>=1.0.0","dkjson>=1.0.0"]}
+-- {"id":93278,"ver":"1.1.3","libVer":"1.0.0","author":"TechnoJo4","dep":["url>=1.0.0","dkjson>=1.0.0"]}
 
 local baseURL = "https://pawchive.pw/"
 local apiURL = baseURL .. "/api/v1"
@@ -28,11 +28,37 @@ local function jsonGET(url)
     return json.decode(res:body():string())
 end
 
+-- /creators is the full list (~96k entries, ~15 MB) with no server-side paging.
+-- Decoding it with dkjson is far too slow on a phone, so pull out only the
+-- fields we need with a pattern, then page through it locally.
+local CREATOR_PATTERN = '{"id":"([^"]*)","name":"(.-)","public_id":.-,"service":"([^"]*)".-"favorited":(%d+)'
+local PER_PAGE = 50
+
 local function creators()
     if not _creators then
-        _creators = jsonGET(apiURL .. "/creators")
+        local body = Request(GET(apiURL .. "/creators", headers)):body():string()
+        local list = {}
+        for id, name, service, favorited in body:gmatch(CREATOR_PATTERN) do
+            list[#list+1] = {
+                id = id,
+                name = (name:gsub("\\(.)", "%1")),
+                service = service,
+                favorited = tonumber(favorited)
+            }
+        end
+        table.sort(list, function(a, b) return a.favorited > b.favorited end)
+        _creators = list
     end
     return _creators
+end
+
+local function pageOf(list, page)
+    local out = {}
+    local first = (page - 1) * PER_PAGE + 1
+    for i = first, math.min(first + PER_PAGE - 1, #list) do
+        out[#out+1] = list[i]
+    end
+    return out
 end
 
 local function shrinkURL(url)
@@ -66,11 +92,12 @@ return {
     baseURL = baseURL,
     imageURL = "https://pawchive.pw/static/logo.png",
     hasSearch = true,
+    startIndex = 1,
     chapterType = ChapterType.HTML,
 
     listings = {
-        Listing("All", false, function(data)
-            return parseListing(creators())
+        Listing("All", true, function(data)
+            return parseListing(pageOf(creators(), data[PAGE]))
         end),
         Listing("Favorites", false, function(data)
             return parseListing(jsonGET(apiURL .. "/account/favorites"))
@@ -131,9 +158,14 @@ return {
             end))
         end
 
-        return parseListing(filter(creators(), function(v)
-            return v.name:match(data[QUERY])
-        end))
+        local query = data[QUERY]:lower()
+        local matches = {}
+        for _,v in ipairs(creators()) do
+            if v.name:lower():find(query, 1, true) then
+                matches[#matches+1] = v
+            end
+        end
+        return parseListing(pageOf(matches, data[PAGE]))
     end,
 
     shrinkURL = shrinkURL,
